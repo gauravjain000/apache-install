@@ -1,4 +1,4 @@
-tower-example
+example
 =============
 
-Ansible Tower Example Playbooks
+Ansible Example Playbooks
