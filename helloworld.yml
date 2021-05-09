@@ -1,8 +1,11 @@
 ---
-- name: Hello World!
-  hosts: all
- 
+- name: Install Apache and Ensure it is running
   tasks:
- 
-  - name: Hello World!
-    shell: echo "Hi! Tower is working."
+      - name: ensure apache is at the latest version
+        yum:
+          name: httpd
+          state: latest
+      - name: ensure apache is running
+        service:
+          name: httpd
+          state: started
