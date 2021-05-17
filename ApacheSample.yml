@@ -10,7 +10,7 @@
     yum:
       name: httpd
       state: latest
-  - name: ensure apache is running
+  - name: Changing apache server's status
     service:
       name: httpd
       state: stopped
