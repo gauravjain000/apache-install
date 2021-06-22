@@ -13,4 +13,4 @@
   - name: Changing apache server's status
     service:
       name: httpd
-      state: started
+      state: stopped
